@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Details";
+
+    foreach (string product in ViewBag.product)
+    {
+        <li>@Html.ActionLink(product, "Details", "Products")</li>
+    }
+}
+
+<h2>Details</h2>
+
